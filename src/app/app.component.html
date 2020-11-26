@@ -1,0 +1,28 @@
+<h4>Basic mat-input - Hover over to me trigger event</h4>
+<mat-form-field>
+	<input
+  #value1
+    matInput
+    [placeholder]="inputPlaceholder"
+    [(ngModel)]="keywordsInput"
+    (mouseover)="MouseOver()"
+    minlength="2"
+
+  />
+
+</mat-form-field>
+
+
+<h4>Basic mat-input - click me to focus trigger event</h4>
+	<mat-form-field>
+		<input
+  #value2
+    matInput
+    [placeholder]="inputPlaceholder"
+    [(ngModel)]="keywordsInput"
+    (focus)="Focus()"
+    minlength="2"
+
+  />
+
+</mat-form-field>
